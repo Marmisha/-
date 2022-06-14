@@ -10,14 +10,11 @@ Console.SetCursorPosition(xb, yb);
 Console.WriteLine("+");    
 Console.SetCursorPosition(xc, yc);
 Console.WriteLine("+");
-
-
 // выбираем 2 точки:
 int x=xa, y=xb;
-// определяем счетчик count, пусть он будет до 10 раз крутиться:
-int count = 0;
+int count = 0; // определяем счетчик count, пока что он равен нулю
 // пишем цикл:
-while(count<5)
+while(count<10000) // пусть выполняется до 10 000 раз
 {//генерируем случайное число:
     int what =new Random().Next(0,3); //[0;3), т.е. 0, 1, 2
 // пишем условие:
