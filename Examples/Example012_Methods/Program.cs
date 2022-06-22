@@ -128,7 +128,7 @@ for (int i = 2;  i<=10; i++) // внешний цикл
 
 
 
-
+/*
 // ===== Работа с текстом
 // Дан текст. В тексте нужно все пробелы заменить черточками,
 // маленькие буквы "к" заменить большими "К",
@@ -171,3 +171,51 @@ Console.WriteLine();
 
 newText = Replace(text, 'С', 'с');
 Console.WriteLine(newText);
+*/
+
+
+
+
+
+
+/*
+int [] arr = {1,5,4,3,2,6,7,1,1};
+// далее неплохо бы решить подзадачу, которая водить данный массив на экран (несколькии спосоами)
+//1)
+void PrintArray(int[] array)
+{
+    int count = array.Length;
+    for (int i=0; i<count; i++)
+    {
+    Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+void SelectionSort(int[] array)
+{
+    for (int i=0; i<array.Length - 1; i++) // если не минус 1, то ниже цикл пойдет искать за предел массива
+    {
+        int minPosition = i; 
+       
+    for (int j = i + 1; j < array.Length; j++)
+    {
+        if(array[j]< array[minPosition]) minPosition = j; // вот этот кусок кода ищет минимальную позицию
+    }
+        int temporary = array[i]; 
+        array[i] = array[minPosition]; // простой обмен переменных местами
+        array [minPosition] = temporary; // сюда кладем временный элемент
+    }
+}
+PrintArray(arr);
+SelectionSort(arr);
+
+PrintArray(arr);
+*/
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// !!!!!!!!Самостоятельно пробую упорядочить от большего к меньшему!!!!!!!!!!!!!
+///////////////////////////////////////////////////////////////////////////////
