@@ -190,6 +190,38 @@ Console.WriteLine($"{i}! = {Factorial(i)}");
 
 
 
-
+/*
 //Числа Фибоначчи
 //f(1) = 1
+// f(2) = 1
+// f(n) = f(n-1) + f(n-2)
+
+int Fibonacci(int n)
+{
+	if (n==1 || n ==2) return 1;
+	else return Fibonacci(n-1) + Fibonacci	(n-2);
+}
+for (int i = 1; i<10; i++) // посмотрим, как посчитаются первые 10 чисел
+{
+	Console.WriteLine(Fibonacci(i));
+}
+*/
+
+
+
+
+
+
+
+
+
+// Поменяем int на double и посчитаем первые 40 чисел 
+double Fibonacci(int n)
+{
+	if (n==1 || n ==2) return 1;
+	else return Fibonacci(n-1) + Fibonacci	(n-2);
+}
+for (int i = 1; i<40; i++) // посмотрим, как посчитаются первые 10 чисел
+{
+	Console.WriteLine(Fibonacci(i));
+}
