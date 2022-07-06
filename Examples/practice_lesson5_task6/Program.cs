@@ -43,6 +43,7 @@ int[] CountPairs(int[] arr)
     return array;
 }
 
+
 int[] myArray = CreateAndFillArray(4, 0, 10);
 printArray(myArray);
 int[] newArray = CountPairs(myArray);
