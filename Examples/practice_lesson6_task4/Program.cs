@@ -10,13 +10,15 @@ Console.Clear();
 int MethodIntFromReadLine(string message)
 {
     Console.Write(message);
-    string number = Console.ReadLine();
-    int numInt = int.Parse(number);
+    //string number = Console.ReadLine();
+    int numInt = int.Parse(Console.ReadLine());
     return numInt;
 }
 
 
-/*
+
+
+/*Мое, не получилось немного
 //Числа Фибоначчи
 int Fibonacci(int n)
 {
@@ -36,20 +38,21 @@ for (int i = 1; i < count; i++) // посмотрим, как посчитают
 
 
 
-//Числа Фибоначчи (чужой вариант, непонятный и не уверена, что правильный):
+//Числа Фибоначчи (чужой вариант, правильный):
 int Fibonacci(int n)
 {
     int first = 0;
     int second = 1;
     int result = 0;
     if (n == 0) return 0;
-    if (n == 1 || n == 2) return 1;
-    System.Console.WriteLine(first + " ");
-    System.Console.WriteLine(second + " ");
-    for (int i = 1; i < n; i++) // посмотрим, как посчитаются первые 10 чисел
+    // if (n == 1 || n == 2) return 1;
+    if (n == 1) return 1;
+    System.Console.Write(first + " ");
+    System.Console.Write(second + " ");
+    for (int i = 2; i < n; i++) // посмотрим, как посчитаются первые 10 чисел
     {
         result = first + second;
-        System.Console.WriteLine(result + " ");
+        System.Console.Write(result + " ");
         first = second;
         second = result;
 
@@ -60,4 +63,4 @@ int Fibonacci(int n)
 
 int N = MethodIntFromReadLine("Введите число: ");
 System.Console.WriteLine($"Вы ввели число {N}."); ;
-Console.WriteLine(Fibonacci(N));
+Fibonacci(N);
