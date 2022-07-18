@@ -1,6 +1,6 @@
 ﻿//Пирамидки
 
-void Towers(string from = "1", string to = "3", string anotherOne = "2", int count = 3)
+void Towers(string from = "1", string to = "3", string anotherOne = "2", int count = 5)
 // 1 - откуда берем блинчики; 3 - куда кладем блинчики; 
 //2 - просто еще один шпиль; count - кол-во блинов
 {
@@ -10,3 +10,5 @@ void Towers(string from = "1", string to = "3", string anotherOne = "2", int cou
 }
 
 Towers();
+
+//Можно поменять count на 4 и посмотреть более масштабное решение
